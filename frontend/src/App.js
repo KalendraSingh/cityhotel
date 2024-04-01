@@ -53,7 +53,7 @@ const App = () => {
             const getStripeApiKey = async () => {
                 try {
                     setStripeLoading(true)
-                    const { data } = await axios.get('/api/v1/stripeapikey');
+                    const { data } = await axios.get('https://cityhotel.onrender.com/api/v1/stripeapikey');
                     setStripeApiKey(data.stripeApiKey);
                     setStripeLoading(false)
                 } catch (err) {
